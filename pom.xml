@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mycompany</groupId>
-    <artifactId>Aula2025014</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
-        <exec.mainClass>com.mycompany.aula2025014.Aula2025014</exec.mainClass>
-    </properties>
-</project>
+
+package com.mycompany.aula2025014;
+
+import java.util.Scanner;
+
+public class Aula2025014 {
+
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+        int opcao;
+        
+        System.out.println("\t====================");
+        System.out.println("\t\tMenu");
+        System.out.println("\t====================");
+        System.out.println("\t(1) - Soma (+)");
+        System.out.println("\t(2) - Subtração (-)");
+        System.out.println("\t(3) - Multiplicação (*)");
+        System.out.println("\t(4) - Divisão (/)");
+        System.out.println("\t(0) - Sair");
+        System.out.println("\t====================");
+        System.out.println("\tDigite a opção desejada:");
+        opcao = scan.nextInt ();
+        System.out.printf("A opção desejada foi: %d \n",opcao);
+    }
+}
